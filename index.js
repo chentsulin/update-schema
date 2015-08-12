@@ -9,13 +9,13 @@ var assign = require('object-assign');
 
 var defaults = {
   print: false,
-  outDir: __dirname,
+  outDir: process.cwd(),
 };
 
 
-module.exports = function updateSchema(schema, options) {
+module.exports = function updateSchema(Schema, options) {
   var opts = assign({}, defaults, options);
-  return graphql(schema, introspectionQuery)
+  return graphql(Schema, introspectionQuery)
     .then(function(result) {
       if (result.errors) {
         if (opts.print) {

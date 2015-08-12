@@ -7,6 +7,7 @@
 
 > A module and cli tool for updating graphql schema
 
+WIP!
 
 ## Install
 
@@ -19,9 +20,9 @@ $ npm install update-schema
 
 ```js
 var updateSchema = require('update-schema');
-var schema = require('./data/schema');
+var Schema = require('./data/schema').Schema;
 
-updateSchema(schema, options);
+updateSchema(Schema, options);
 //=>
 ```
 

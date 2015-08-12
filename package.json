@@ -29,6 +29,7 @@
     "schema"
   ],
   "dependencies": {
+    "babel": "^5.8.21",
     "graphql": "^0.3.0",
     "meow": "^3.0.0",
     "object-assign": "^3.0.0"
