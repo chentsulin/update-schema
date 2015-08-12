@@ -19,8 +19,9 @@ $ npm install update-schema
 
 ```js
 var updateSchema = require('update-schema');
+var schema = require('./data/schema');
 
-updateSchema(filePath, options);
+updateSchema(schema, options);
 //=>
 ```
 
@@ -52,25 +53,25 @@ $ update-schema --help
 
 ## API
 
-### updateSchema(filePath, [options])
+### updateSchema(schema, [options])
 
-#### filePath
+#### schema
 
 *Required*
-Type: `string`
+Type: `GraphQLSchema`
 
-File path of Schema.
+GraphQL Schema.
 
 #### options
 
-##### --print, -p
+##### print
 
 Type: `boolean`
-Default: `true`
+Default: `false`
 
 Determine whether print or not.
 
-##### --out-dir, -d
+##### outDir
 
 Type: `string`
 Default: `__dirname`

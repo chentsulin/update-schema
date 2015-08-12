@@ -8,7 +8,7 @@ var assign = require('object-assign');
 
 
 var defaults = {
-  print: true,
+  print: false,
   outDir: __dirname,
 };
 

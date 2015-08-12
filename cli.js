@@ -35,4 +35,14 @@ if (outDir) {
   opts.outDir = outDir;
 }
 
-updateSchema(file, opts);
+var schema;
+try {
+  schema = require(file);
+} catch (err) {
+  if (print) {
+    console.error('ERROR: ', err);
+  }
+}
+
+
+updateSchema(schema, opts);
