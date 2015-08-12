@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "no-var": 0,
+    "strict": [2, "always"]
+  }
+}

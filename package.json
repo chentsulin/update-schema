@@ -1,0 +1,45 @@
+{
+  "name": "update-schema",
+  "version": "0.1.0",
+  "description": "A module and cli tool for updating graphql schema",
+  "license": "MIT",
+  "repository": "chentsulin/update-schema",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": {
+    "name": "C.T. Lin",
+    "email": "chentsulin@gmail.com",
+    "url": "github.com/chentsulin/update-schema"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "update-schema",
+    "graphql",
+    "graphql-schema",
+    "schema"
+  ],
+  "dependencies": {
+    "graphql": "^0.3.0",
+    "meow": "^3.0.0",
+    "object-assign": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "chai": "^3.2.0",
+    "eslint": "^0.24.1",
+    "eslint-config-airbnb": "0.0.7",
+    "eslint-plugin-react": "^3.2.2",
+    "istanbul": "^0.3.14",
+    "mocha": "*"
+  }
+}
